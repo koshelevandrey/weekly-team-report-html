@@ -1,0 +1,12 @@
+header {
+  background-color: $header-bg;
+}
+
+.nav-pills {
+  .nav-link {
+    padding: $nav-pills-padding-y $nav-pills-padding-x;
+    &.active {
+      font-weight: $nav-pills-link-active-font-weight;
+    }
+  }
+}
