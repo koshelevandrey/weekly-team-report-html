@@ -1,0 +1,28 @@
+.smile-happy{
+  background-image: url("../img/happy.svg");
+}
+.smile-neutral{
+  background-image: url("../img/neutral.svg");
+}
+.smile-sad{
+  background-image: url("../img/sad.svg");
+}
+.smile-sad{
+  background-image: url("../img/sad.svg");
+}
+.smile-very-sad{
+  background-image: url("../img/very-sad.svg");
+}
+.smile-very-happy{
+  background-image: url("../img/very-happy.svg");
+}
+.smile-unmarked{
+  background-image: url("../img/unmarked.svg");
+}
+.smile{
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
