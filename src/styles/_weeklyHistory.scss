@@ -1,0 +1,17 @@
+.main-background{
+  background-color: $gray-200;
+}
+.w-90 {
+  width: 90%;
+}
+
+.image-size{
+  width: 30px;
+  height: 30px;
+}
+.yellow-line::after{
+  display: inline-block;
+  content: "";
+  width: 2rem;
+  border: 0.2rem solid $yellow;
+}
