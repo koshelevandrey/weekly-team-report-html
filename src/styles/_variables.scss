@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/variables";
+
+
+//Colors
+$gray-800: #333a3d;
+$gray-900: #1f2426;
+
+
+//Navigation
+$nav-link-color: $white;
+$nav-link-hover-color: $yellow;
+$nav-pills-link-active-color: $white;
+$nav-pills-link-active-bg: $gray-900;
+$nav-pills-link-active-font-weight: bold;
+$nav-pills-padding-y: 10px;
+$nav-pills-padding-x: 20px;
+
+
+//Aside
+$aside-width: 300px;
+$aside-bg: $gray-800;

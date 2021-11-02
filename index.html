@@ -1,32 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Webpack App</title>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8"/>
+    <title>Webpack App</title>
+</head>
+<body>
+<div class="d-flex w-100 h-100">
+    <aside class="p-5 d-flex flex-column justify-content-between">
         <div>
-            <aside>
-                TEST1
-            </aside>
-            <main>
-                TEST2
-            </main>
+            <h1 class="text-light">
+                Logo
+            </h1>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Launch Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Invite Your Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fill out a Report</a>
+                </li>
+            </ul>
         </div>
-    </body>
-    
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker
-                    .register("service-worker.js")
-                    .then((registration) => {
-                        console.log("Service Worker registered: ", registration);
-                    })
-                    .catch((registrationError) => {
-                        console.error("Service Worker registration failed: ", registrationError);
-                    });
-            });
-        }
-    </script>
+        <div>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Back to Elite</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Company</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">⚙ My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">🚪 Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="flex-grow-1 container-fluid">
+        <header class="bg-dark p-5 text-center text-light">
+            <h1>Invite your team</h1>
+        </header>
+        <div class="p-2">
+            <div class="form mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <strong>
+                            Enter the team member you would like to invite.
+                        </strong>
+                        <div>
+                            Don't Worry! You'll be able to add more team members later.
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                First Name
+                            </label>
+                            <input class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Last Name
+                            </label>
+                            <input class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <input class="form-control">
+                        </div>
+                        <button class="btn btn-warning mt-3">
+                            Invite
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error("Service Worker registration failed: ", registrationError);
+                });
+        });
+    }
+</script>
 </html>
