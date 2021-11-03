@@ -1,0 +1,45 @@
+.fill-out-textarea{
+  resize: none;
+  height: 200px;
+  border: none;
+  padding: 30px;
+}
+
+.fill-out-textarea::placeholder{
+  color: #bcbec2;
+}
+
+.fill-out-textarea:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #ffd658;
+}
+
+.smile-card{
+  height: 200px;
+  width: 200px;
+  border: none;
+}
+
+.smile-icon{
+  height: 100px;
+  width: 100px;
+}
+
+.btn-primary.disabled {
+  background-color: #e8eced;
+  color: #8e999e;
+  border: none;
+  font-weight: bold;
+}
+
+body{
+  background-color: #f5f7f8;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2.3rem;
+}
