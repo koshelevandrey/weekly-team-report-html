@@ -1,0 +1,11 @@
+.help-button{
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  border-radius: 2rem;
+  z-index: 999;
+  border: 0;
+  font-weight: bold;
+  color: $gray-700;
+  background-color: $help-button-background-color;
+}
