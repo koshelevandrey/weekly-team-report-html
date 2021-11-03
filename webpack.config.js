@@ -4,27 +4,43 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV == "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 const stylesHandler = "style-loader";
 
+const pages = [
+    "index"
+];
+
 const config = {
-  entry: "./src/index.js",
+  entry: pages.reduce((config, page) => {
+    config[page] = `./src/${page}.js`;
+    return config;
+  }, {}),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    filename: '[name].js',
+    path: path.resolve(__dirname, "dist")
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
   },
   devServer: {
     open: true,
     host: "localhost",
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "index.html",
-    }),
-
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-  ],
+  plugins: [].concat(
+      pages.map(
+          (page) =>
+              new HtmlWebpackPlugin({
+                inject: true,
+                template: `./${page}.html`,
+                filename: `${page}.html`,
+                chunks: [page],
+              })
+      )
+  ),
   module: {
     rules: [
       {
