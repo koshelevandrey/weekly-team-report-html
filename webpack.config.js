@@ -18,14 +18,14 @@ const config = {
     host: "localhost",
   },
   plugins: [
-    /*
   new HtmlWebpackPlugin({
     template: "Weekly report history.html",
   }),
-*/
+/*
   new HtmlWebpackPlugin({
     template: "my_reports.html",
   }),
+  */
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
