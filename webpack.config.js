@@ -9,7 +9,7 @@ const isProduction = process.env.NODE_ENV === "production";
 const stylesHandler = "style-loader";
 
 const pages = [
-    "invite_your_team"
+    "invite_your_team",
 ];
 
 const config = {
@@ -60,8 +60,9 @@ const config = {
         type: "asset",
       },
       {
-        test: /\.(html)$/,
-        use: ['html-loader?interpolate']
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        type: "asset/resource",
+        use: 'file-loader?name=./[name].[ext]'
       },
 
       // Add your rules for custom modules here
