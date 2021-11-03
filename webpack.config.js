@@ -9,6 +9,7 @@ const isProduction = process.env.NODE_ENV === "production";
 const stylesHandler = "style-loader";
 
 const pages = [
+    "index",
     "invite_your_team",
 ];
 
