@@ -7,9 +7,15 @@ const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = "style-loader";
-
+const pages = [
+  "my_reports",
+  "weekly_report_history"
+];
 const config = {
-  entry: "./src/index.js",
+  entry: pages.reduce((config, page) => {
+    config[page] = `./src/${page}.js`;
+    return config;
+  }, {}),
   output: {
     path: path.resolve(__dirname, "dist"),
   },
@@ -17,18 +23,17 @@ const config = {
     open: true,
     host: "localhost",
   },
-  plugins: [
-  new HtmlWebpackPlugin({
-    template: "Weekly report history.html",
-  }),
-/*
-  new HtmlWebpackPlugin({
-    template: "my_reports.html",
-  }),
-  */
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-  ],
+  plugins: [].concat(
+      pages.map(
+          (page) =>
+              new HtmlWebpackPlugin({
+                inject: true,
+                template: `./${page}.html`,
+                filename: `${page}.html`,
+                chunks: [page],
+              })
+      )
+  ),
   module: {
     rules: [
       {
