@@ -7,3 +7,14 @@
 
   }
 }
+.nav-link{
+  display: block;
+  color:  $white;
+}
+.nav-link:active{
+  font-weight: bold;
+}
+.nav-link:hover{
+  font-weight: bold;
+  color: $yellow;
+}
