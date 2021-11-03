@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>Webpack App</title>
+</head>
+<body>
+<button type="button" class="btn btn-primary feedback-button">Feedback</button>
+<button type="button" class="btn help-button"><i class="bi bi-question-circle m-2 fw-bold"></i>Help</button>
+<div class="d-flex h-100">
+    <aside class="p-3 d-flex flex-column justify-content-between text">
+        <div>
+            <img src="src/img/logo.png" alt="logo">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#">Launch Guide</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link active" aria-current="page" href="#">Invite Your Team</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#">Team Reports</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#">My Reports</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-warning" href="#">Fill out a Report</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item p-2 pb-3">
+                    <a class="nav-link" href="#">Back to Elite</a>
+                </li>
+                <li class="nav-item p-2 pt-3 pb-3">
+                    <a class="nav-link" href="#">My Company</a>
+                </li>
+                <li class="nav-item p-2 pt-3 pb-3">
+                    <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="#"><i class="bi bi-arrow-left-square-fill"></i> Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="flex-grow-1">
+        <header class="bg-dark p-5 text-center text-light">
+            <h1>Invite your team</h1>
+        </header>
+        <div class="p-2 container-fluid">
+            <div class="form mx-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="pb-2">
+                            <strong>
+                                Enter the team member you would like to invite.
+                            </strong>
+                        </div>
+                        <div class="pb-2">
+                            Don't Worry! You'll be able to add more team members later.
+                        </div>
+                        <div class="form-group pt-2 pb-2">
+                            <label>
+                                <strong>
+                                    First Name
+                                </strong>
+                            </label>
+                            <input class="form-control">
+                        </div>
+                        <div class="form-group pt-2 pb-2">
+                            <label>
+                                <strong>
+                                    Last Name
+                                </strong>
+                            </label>
+                            <input class="form-control">
+                        </div>
+                        <div class="form-group pt-2 pb-2">
+                            <label>
+                                <strong>
+                                    Email
+                                </strong>
+                            </label>
+                            <input class="form-control">
+                        </div>
+                        <button class="btn btn-warning mt-3">
+                            <strong>
+                                Invite
+                            </strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker
+                .register("service-worker.js")
+                .then((registration) => {
+                    console.log("Service Worker registered: ", registration);
+                })
+                .catch((registrationError) => {
+                    console.error("Service Worker registration failed: ", registrationError);
+                });
+        });
+    }
+</script>
+</html>

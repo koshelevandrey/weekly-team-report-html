@@ -4,7 +4,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV == "production";
+const isProduction = process.env.NODE_ENV === "production";
 
 const stylesHandler = "style-loader";
 const pages = [
@@ -17,7 +17,13 @@ const config = {
     return config;
   }, {}),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    filename: '[name].js',
+    path: path.resolve(__dirname, "dist")
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
   },
   devServer: {
     open: true,
@@ -52,18 +58,6 @@ const config = {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
       },
-      { test: /\.(html)$/,
-        use: {
-          loader: 'html-loader',
-        }
-      },
-      {
-        test: /\.(jpe?g|png|gif)$/,
-        type: 'asset/resource',
-        generator: {
-          filename: 'img/[hash][ext]'
-        }
-      }
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
