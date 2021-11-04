@@ -7,15 +7,14 @@
    <stop stop-color="#898989" stop-opacity="0" offset="1"/>
   </radialGradient>
  </defs>
- <g transform="translate(-116.85 -116.46)">
-  <g transform="matrix(1.0043 0 0 1.0043 -100.45 155.53)">
+ <g transform="translate(-121.14 -112.89)">
+  <g transform="matrix(1.0043 0 0 1.0043 -96.169 151.96)">
    <g>
     <ellipse cx="225.13" cy="-28.064" rx="8.7164" ry="7.47" fill="url(#a)"/>
     <circle cx="225.13" cy="-30.139" r="8.761" fill="#fff"/>
-    <circle transform="rotate(51.977)" cx="114.94" cy="-195.92" r="7.2885" fill="#d64239"/>
-    <path d="m229.62-24.397c-2.4321 1.9017-5.6934 2.0152-8.2 0.53408-1.7684-4.7822 2.4542-10.24 7.4679-12.523 0.74298 0.44665 1.4182 1.0343 1.9841 1.758 2.4795 3.171 1.919 7.7517-1.252 10.231z" fill="#e64b40" stroke-width=".093145"/>
+    <circle transform="rotate(51.977)" cx="114.94" cy="-195.92" r="7.2885" fill="#e8eced"/>
    </g>
-   <g fill="none" stroke="#000">
+   <g fill="none" stroke="#b7bfc3">
     <path d="m222.14-25.323c1.6306-1.7529 4.7124-1.9348 6.1325 0.08063" stroke-width=".56521"/>
     <path d="m220.22-30.642c1.0866 0.07112 1.701-0.52833 2.309-1.1368" stroke-width=".565"/>
     <path d="m227.68-31.763c0.60891 0.86894 1.4362 1.2175 2.3964 1.2496" stroke-width=".565"/>

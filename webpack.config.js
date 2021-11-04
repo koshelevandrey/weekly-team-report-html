@@ -8,9 +8,12 @@ const isProduction = process.env.NODE_ENV === "production";
 
 const stylesHandler = "style-loader";
 const pages = [
+
   "my_reports",
   "weekly_report_history",
+  "index",
   "invite_your_team",
+  "fill-out-report",
 ];
 const config = {
   entry: pages.reduce((config, page) => {

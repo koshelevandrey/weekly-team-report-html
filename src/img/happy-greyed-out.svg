@@ -7,20 +7,19 @@
    <stop stop-color="#898989" stop-opacity="0" offset="1"/>
   </radialGradient>
  </defs>
- <g transform="translate(-128.32 -132.92)">
-  <g transform="translate(-88.057 171.82)">
+ <g transform="translate(-93.333 -109.36)">
+  <g transform="translate(-123.04 148.26)">
    <g>
     <ellipse cx="225.13" cy="-28.064" rx="8.7164" ry="7.47" fill="url(#a)"/>
     <circle cx="225.13" cy="-30.139" r="8.761" fill="#fff"/>
-    <circle transform="rotate(17.568)" cx="205.54" cy="-96.686" r="7.2885" fill="#f8ba48"/>
-    <path d="m232.08-27.939c-0.93186 2.9433-3.5584 4.8799-6.4634 5.0744-4.1614-2.9461-3.7616-9.8348-0.91561-14.552 0.86537-0.05135 1.7546 0.05192 2.6304 0.32919 3.8376 1.215 5.9636 5.3109 4.7486 9.1485z" fill="#ffc95e" stroke-width=".093145"/>
-    <circle cx="222.47" cy="-31.101" r=".50483"/>
-    <circle cx="228.1" cy="-31.101" r=".50483"/>
+    <circle cx="225.13" cy="-30.139" r="7.2885" fill="#e8eced"/>
+    <circle cx="222.47" cy="-31.101" r=".50483" fill="#b7bfc3" stroke="#b7bfc3" stroke-width=".08"/>
+    <circle cx="228.1" cy="-31.101" r=".50483" fill="#b7bfc3" stroke="#b7bfc3" stroke-width=".08"/>
    </g>
-   <g fill="none" stroke="#000" stroke-width=".565">
-    <path d="m222.64-27.331 5.4215-0.04462"/>
-    <path d="m221.28-32.466 2.1298-0.63104"/>
-    <path d="m226.88-33.02 2.6104 0.55777"/>
+   <g fill="none" stroke="#b7bfc3" stroke-width=".565">
+    <path d="m222.2-27.498c1.7676 1.525 3.8107 2.2355 6.1689-0.07809"/>
+    <path d="m220.8-32.095c0.42082-0.43428 1.28-0.89616 2.0667-0.93079"/>
+    <path d="m227.43-33.14c1.0091-0.05806 1.8244 0.63296 2.1069 1.1136"/>
    </g>
   </g>
  </g>
