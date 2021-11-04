@@ -7,14 +7,16 @@ const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const isProduction = process.env.NODE_ENV === "production";
 
 const stylesHandler = "style-loader";
-const pages = [
 
+const pages = [
   "my_reports",
   "weekly_report_history",
   "index",
   "invite_your_team",
   "fill-out-report",
+  "edit-profile",
 ];
+
 const config = {
   entry: pages.reduce((config, page) => {
     config[page] = `./src/${page}.js`;
