@@ -1,54 +1,38 @@
 .fill-out-textarea{
   resize: none;
-  height: 200px;
+  height: $report-textarea-height;
   border: none;
-  padding: 30px;
-}
+  padding: $report-textarea-padding;
 
-.fill-out-textarea::placeholder{
-  color: #bcbec2;
-}
-
-.fill-out-textarea:focus {
-  outline: none !important;
-  box-shadow: 0 0 10px #ffd658;
+  &:focus{
+    box-shadow: $textarea-focus-box-shadow;
+  }
 }
 
 .smile-card{
-  height: 200px;
-  width: 200px;
+  height: $smile-card-size;
+  width: $smile-card-size;
   border: none;
 }
 
 .smile-icon{
-  height: 100px;
-  width: 100px;
+  height: $smile-size;
+  width: $smile-size;
 }
 
-.btn-primary.disabled {
-  background-color: #e8eced;
-  color: #8e999e;
-  border: none;
-  font-weight: bold;
-}
-
-.date-block{
-  width: 600px;
+.small-block{
+  width: $small-block-width;
   margin: 0 auto;
 }
 
 .send-report-button{
-  height: 40px;
+  height: $send-button-height;
 }
 
-body{
-  background-color: #f5f7f8;
+.big-title{
+  font-size: $big-title-size;
 }
 
-h1{
-  font-size: 4rem;
-}
-
-h2{
-  font-size: 2.3rem;
+.content-block-title{
+  font-size: $content-block-title-size;
 }
