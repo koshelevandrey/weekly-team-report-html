@@ -9,49 +9,47 @@
     <body>
     <button type="button" class="btn btn-primary feedback-button">Feedback</button>
     <button type="button" class="btn btn-warning help-button"><i class="bi bi-question-circle m-2"></i>Help</button>
-    <div class="d-flex w-100 h-100">
-        <aside class="p-5 d-flex flex-column justify-content-between">
+    <div class="d-flex h-100">
+        <aside class="p-3 d-flex flex-column justify-content-between text">
             <div>
-                <h1 class="text-light">
-                    Logo
-                </h1>
+                <img src="logo.png" alt="logo">
                 <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Launch Guide</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#">Launch Guide</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Invite Your Team</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" aria-current="page" href="#">Invite Your Team</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-2">
                         <a class="nav-link" href="#">Team Reports</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-2">
                         <a class="nav-link" href="#">My Reports</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fill out a Report</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-warning" href="#">Fill out a Report</a>
                     </li>
                 </ul>
             </div>
             <div>
                 <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
+                    <li class="nav-item p-2 pb-3">
                         <a class="nav-link" href="#">Back to Elite</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item p-2 pt-3 pb-3">
                         <a class="nav-link" href="#">My Company</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">⚙ My Profile</a>
+                    <li class="nav-item p-2 pt-3 pb-3">
+                        <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">🚪 Sign Out</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#"><i class="bi bi-arrow-left-square-fill"></i> Sign Out</a>
                     </li>
                 </ul>
             </div>
         </aside>
         <main class="flex-grow-1">
-            <header class=" d-flex flex-column justify-content-between align-items-center text-light p-4">
+            <header class=" d-flex flex-column justify-content-between align-items-center text-light bg-dark p-3 text-light">
                 <ul class="pagination pagination-sm my-3">
                     <li class="page-item"><a href="#" class="page-link bg-dark">Immediate Team</a></li>
                     <li class="page-item active"><a href="#" class="page-link">Extended Team</a></li>
@@ -79,31 +77,30 @@
                     <div class="row flex-nowrap w-85">
                         <div class="col-lg-5 py-3 m-2 "></div>
                         <div class="col-lg-7 row flex-nowrap justify-content-around align-items-center">
-                            <p class="p-1 small col">9w ago</p>
-                            <p class="p-1 small col">8w ago</p>
-                            <p class="p-1 small col">7w ago</p>
-                            <p class="p-1 small col">6w ago</p>
-                            <p class="p-1 small col">5w ago</p>
-                            <p class="p-1 small col">4w ago</p>
-                            <p class="p-1 small col">3w ago</p>
-                            <p class="p-1 small col">2w ago</p>
-                            <p class="p-1 small col">1w ago</p>
-                            <p class="p-1 small col">Current</p>
+                            <p class="p-1 mb-0 text-center small col">9w ago</p>
+                            <p class="p-1 mb-0 text-center small col">8w ago</p>
+                            <p class="p-1 mb-0 text-center small col">7w ago</p>
+                            <p class="p-1 mb-0 text-center small col">6w ago</p>
+                            <p class="p-1 mb-0 text-center small col">5w ago</p>
+                            <p class="p-1 mb-0 text-center small col">4w ago</p>
+                            <p class="p-1 mb-0 text-center small col">3w ago</p>
+                            <p class="p-1 mb-0 text-center small col">2w ago</p>
+                            <p class="p-1 mb-0 text-center small col">1w ago</p>
+                            <p class="p-1 mb-0 text-center small col">Current</p>
                         </div>
                     </div>
                     <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 font-weight-bold col-lg-5">Overall</p>
+                        <p class="py-3 m-2 fw-bold col-lg-5">Overall</p>
                         <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <i class="smile smile-happy"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-sad"></i>
-                            <i class="smile smile-very-sad"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-happy"></i>
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
                         </div>
                     </div>
                 </div>
@@ -113,121 +110,114 @@
                     <div class="row flex-nowrap w-85">
                         <div class="col-lg-5 py-3 m-2 "></div>
                         <div class="col-lg-7 row flex-nowrap justify-content-around align-items-center">
-                            <p class="p-1 small col">9w ago</p>
-                            <p class="p-1 small col">8w ago</p>
-                            <p class="p-1 small col">7w ago</p>
-                            <p class="p-1 small col">6w ago</p>
-                            <p class="p-1 small col">5w ago</p>
-                            <p class="p-1 small col">4w ago</p>
-                            <p class="p-1 small col">3w ago</p>
-                            <p class="p-1 small col">2w ago</p>
-                            <p class="p-1 small col">1w ago</p>
-                            <p class="p-1 small col">Current</p>
+                            <p class="p-1 mb-0 text-center small col">9w ago</p>
+                            <p class="p-1 mb-0 text-center small col">8w ago</p>
+                            <p class="p-1 mb-0 text-center small col">7w ago</p>
+                            <p class="p-1 mb-0 text-center small col">6w ago</p>
+                            <p class="p-1 mb-0 text-center small col">5w ago</p>
+                            <p class="p-1 mb-0 text-center small col">4w ago</p>
+                            <p class="p-1 mb-0 text-center small col">3w ago</p>
+                            <p class="p-1 mb-0 text-center small col">2w ago</p>
+                            <p class="p-1 mb-0 text-center small col">1w ago</p>
+                            <p class="p-1 mb-0 text-center small col">Current</p>
                         </div>
                     </div>
                     <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
                         <p class="py-3 m-2 col-lg-5">John Doe</p>
                         <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <i class="smile smile-happy"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-sad"></i>
-                            <i class="smile smile-very-sad"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-happy"></i>
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
                         </div>
                     </div>
                     <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 font-weight-bold col-lg-5">Overall</p>
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
                         <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <i class="smile smile-happy"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-sad"></i>
-                            <i class="smile smile-very-sad"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-happy"></i>
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
                         </div>
                     </div>
                     <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 font-weight-bold col-lg-5">Overall</p>
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
                         <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <i class="smile smile-happy"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-sad"></i>
-                            <i class="smile smile-very-sad"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-happy"></i>
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
                         </div>
                     </div>
                     <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 font-weight-bold col-lg-5">Overall</p>
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
                         <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <i class="smile smile-happy"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-sad"></i>
-                            <i class="smile smile-very-sad"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-happy"></i>
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
                         </div>
                     </div>
                     <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 font-weight-bold col-lg-5">Overall</p>
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
                         <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <i class="smile smile-happy"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-sad"></i>
-                            <i class="smile smile-very-sad"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-happy"></i>
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
                         </div>
                     </div>
                     <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 font-weight-bold col-lg-5">Overall</p>
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
                         <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <i class="smile smile-happy"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-sad"></i>
-                            <i class="smile smile-very-sad"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-happy"></i>
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
                         </div>
                     </div>
                     <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 font-weight-bold col-lg-5">Overall</p>
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
                         <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <i class="smile smile-happy"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-sad"></i>
-                            <i class="smile smile-very-sad"></i>
-                            <i class="smile smile-unmarked"></i>
-                            <i class="smile smile-neutral"></i>
-                            <i class="smile smile-happy"></i>
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
                         </div>
                     </div>
                 </div>

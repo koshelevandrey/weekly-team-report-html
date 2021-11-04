@@ -9,7 +9,8 @@ const isProduction = process.env.NODE_ENV === "production";
 const stylesHandler = "style-loader";
 const pages = [
   "my_reports",
-  "weekly_report_history"
+  "weekly_report_history",
+  "invite_your_team",
 ];
 const config = {
   entry: pages.reduce((config, page) => {
@@ -56,11 +57,9 @@ const config = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset",
+        type: "asset/resource",
+        use: 'file-loader?name=./[name].[ext]'
       },
-
-      // Add your rules for custom modules here
-      // Learn more about loaders from https://webpack.js.org/loaders/
     ],
   },
 };
