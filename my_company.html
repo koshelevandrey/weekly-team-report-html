@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <title>My company</title>
+</head>
+
+<body>
+<button type="button" class="btn btn-primary feedback-button">Feedback</button>
+<button type="button" class="btn help-button"><i class="bi bi-question-circle m-2 fw-bold"></i>Help</button>
+    <div class="d-flex w-100 h-100">
+        <aside class="p-3 d-flex flex-column justify-content-between text">
+            <div>
+                <img src="logo.png" alt="logo">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item p-2">
+                        <a class="nav-link" aria-current="page" href="index.html">Launch Guide</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="invite_your_team.html">Invite Your Team</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="weekly_report_history.html">Team Reports</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="my_reports.html">My Reports</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-warning" href="fill-out-report.html">Fill out a Report</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item p-2 pb-3">
+                        <a class="nav-link" href="#">Back to Elite</a>
+                    </li>
+                    <li class="nav-item p-2 pt-3 pb-3">
+                        <a class="nav-link active" href="#">My Company</a>
+                    </li>
+                    <li class="nav-item p-2 pt-3 pb-3">
+                        <a class="nav-link" href="edit-profile.html"><i class="bi bi-gear-fill"></i> My Profile</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#"><i class="bi bi-arrow-left-square-fill"></i> Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="flex-grow-1">
+            <header class="bg-dark p-5 text-center text-light">
+                <h1><b>ANKO Technologies Corp</b></h1>
+                <p>Joined January 2020</p>
+            </header>
+            <div class="row p-5 my-3 mx-5 d-flex text-left">
+                <h2 class="fw-bold"><b>Edit ANKO Technologies Corp's information</b></h2>
+                <p class="fs-5 mb-5">You may edit the company name, as well as deactive/active the Weekly Report tool
+                    functionality. If you need to edit a team member's information, you can access that information
+                    by seeing the list of team members.</p>
+                <div class="fw-bold fs-5 text-uppercase  p-0 my-3 mx-2">RENAME ANKO TECHNOLOGIES CORP
+                    <hr class="mt-1">
+                </div>
+
+                <div class="mb-2 plive">
+                    <label for="company-name" class="form-label fs-5 fw-bold">Change company name.</label>
+                    <input type="text" class="form-control border border-warning" id="company-name">
+                </div>
+                <div>
+                    <button class="btn btn-outline-dark mt-2" type="submit">
+                        Save name change
+                    </button>
+                    <div class="fw-bold fs-5 mt-5">SEE LIST OF ANKO TECHNOLOGIES CORP'S MEMBERS</div>
+                    <hr class="mt-0">
+                    <p class="fs-5 mt-4">If you need to edit a particular team member, you can see a complete list of team members and
+                        visit their profile to make edits. <b>You will not be able to see a team member's weekly
+                            report.</b></p>
+                    <button class="btn btn-outline-dark mt-2">
+                        See All Team Members
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
