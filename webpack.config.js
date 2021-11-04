@@ -7,13 +7,14 @@ const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const isProduction = process.env.NODE_ENV === "production";
 
 const stylesHandler = "style-loader";
-
 const pages = [
-    "index",
-    "invite_your_team",
-    "fill-out-report",
-];
 
+  "my_reports",
+  "weekly_report_history",
+  "index",
+  "invite_your_team",
+  "fill-out-report",
+];
 const config = {
   entry: pages.reduce((config, page) => {
     config[page] = `./src/${page}.js`;
@@ -62,9 +63,6 @@ const config = {
         type: "asset/resource",
         use: 'file-loader?name=./[name].[ext]'
       },
-
-      // Add your rules for custom modules here
-      // Learn more about loaders from https://webpack.js.org/loaders/
     ],
   },
 };
