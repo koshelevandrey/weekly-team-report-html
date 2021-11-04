@@ -15,6 +15,7 @@ const pages = [
   "invite_your_team",
   "fill-out-report",
   "edit-profile",
+  "edit_members",
 ];
 
 const config = {
