@@ -14,6 +14,7 @@ const pages = [
   "index",
   "invite_your_team",
   "fill-out-report",
+  "edit_members",
 ];
 const config = {
   entry: pages.reduce((config, page) => {
