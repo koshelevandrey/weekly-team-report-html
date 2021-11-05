@@ -14,6 +14,12 @@ To run server use:
 npm run serve
 ```
 
+To deploy current state of project to github-pages use:
+
+```
+npm run deploy
+```
+
 To build app use:
 
 ```
