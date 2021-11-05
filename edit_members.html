@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,6 +9,33 @@
     <body>
     <button type="button" class="btn btn-primary feedback-button">Feedback</button>
     <button type="button" class="btn btn-warning help-button"><i class="bi bi-question-circle m-2"></i>Help</button>
+    <div class="modal-stub-background"></div>
+    <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" style="display: block">
+        <div class="modal-dialog modal-dialog-centered modal-size">
+            <div class="modal-content top-border-color p-4">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2 class="fw-bolder">Edit Leader(s).</h2>
+                    <p>By default, the person eho sent you the invite will receive you weekly report. You may also select the person you report to directly as an additional leader.</p>
+                    <p class="my-lg-4">Pro Tip: You can change who sees your report in your profile settings. </p>
+                    <div class="d-inline">
+                        <button type="button" class="btn btn-dark p-1">
+                            Random Name <span class="badge"><span class="text-black-50">|</span> X</span>
+                        </button>
+                        <button type="button" class="btn btn-dark p-1">
+                            John Doe <span class="badge"><span class="text-black-50">|</span> X</span>
+                        </button>
+                    </div>
+                    <input class="form-control form-control-lg mt-4" type="text" aria-label=".form-control-lg example">
+                </div>
+                <div class="modal-footer modal-bottom-button border-0 mt-3">
+                    <button type="button" class="btn save-button">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="d-flex h-100">
         <aside class="p-3 d-flex flex-column justify-content-between text">
             <div>
@@ -37,10 +64,10 @@
                         <a class="nav-link" href="#">Back to Elite</a>
                     </li>
                     <li class="nav-item p-2 pt-3 pb-3">
-                        <a class="nav-link" href="my_company.html">My Company</a>
+                        <a class="nav-link" href="#">My Company</a>
                     </li>
                     <li class="nav-item p-2 pt-3 pb-3">
-                        <a class="nav-link" href="edit-profile.html"><i class="bi bi-gear-fill"></i> My Profile</a>
+                        <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
                     </li>
                     <li class="nav-item p-2">
                         <a class="nav-link" href="#"><i class="bi bi-arrow-left-square-fill"></i> Sign Out</a>
@@ -48,10 +75,10 @@
                 </ul>
             </div>
         </aside>
-        <main class="flex-grow-1  overflow-auto">
+        <main class="flex-grow-1 overflow-auto">
             <header class=" d-flex flex-column justify-content-between align-items-center text-light bg-dark p-3 text-light">
                 <ul class="pagination pagination-sm my-3">
-                    <li class="page-item"><a href="team_reports.html" class="page-link bg-dark">Immediate Team</a></li>
+                    <li class="page-item"><a href="#" class="page-link bg-dark">Immediate Team</a></li>
                     <li class="page-item active"><a href="#" class="page-link">Extended Team</a></li>
                 </ul>
                 <h1 class="my-3">Weekly report history</h1>
