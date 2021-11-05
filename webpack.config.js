@@ -17,6 +17,9 @@ const pages = [
   "edit-profile",
   "my_company",
   "team_members",
+  "edit_members",
+  "team_reports",
+  "invite_your_team_success_info",
 ];
 
 const config = {

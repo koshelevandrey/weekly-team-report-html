@@ -36,3 +36,15 @@
 .content-block-title{
   font-size: $content-block-title-size;
 }
+
+.textarea-with-counter{
+  position: relative;
+  //display: inline-block;
+}
+
+.textarea-counter{
+  color: $input-placeholder-color;
+  position: absolute;
+  bottom: $report-textarea-padding;
+  right: $report-textarea-padding;
+}
