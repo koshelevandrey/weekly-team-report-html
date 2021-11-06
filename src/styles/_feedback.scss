@@ -1,0 +1,8 @@
+.feedback-button{
+  position: fixed;
+  transform: rotate(-90deg);
+  top: 40%;
+  right: -2rem;
+  background-color: $feedback-button-background-color;
+  border: 0;
+}

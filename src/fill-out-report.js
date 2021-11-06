@@ -1,0 +1,8 @@
+import "./styles/main.scss"
+import "./img/very-sad.svg"
+import "./img/very-sad-greyed-out.svg"
+import "./img/sad-greyed-out.svg"
+import "./img/neutral-greyed-out.svg"
+import "./img/happy-greyed-out.svg"
+import "./img/very-happy-greyed-out.svg"
+import "./img/big-title-brush-background.png"

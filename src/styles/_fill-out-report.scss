@@ -1,0 +1,54 @@
+.fill-out-textarea{
+  resize: none;
+  height: $report-textarea-height;
+  border: none;
+  padding: $report-textarea-padding;
+
+  &:focus{
+    box-shadow: $textarea-focus-box-shadow;
+  }
+}
+
+.smile-card{
+  height: $smile-card-size;
+  width: $smile-card-size;
+  border: none;
+}
+
+.smile-icon{
+  height: $smile-size;
+  width: $smile-size;
+}
+
+.small-block{
+  width: $small-block-width;
+  margin: 0 auto;
+}
+
+.send-report-button{
+  height: $send-button-height;
+}
+
+.big-title{
+  font-size: $big-title-size;
+}
+
+.brush-bg{
+  background: url("../img/big-title-brush-background.png") no-repeat center;
+}
+
+.content-block-title{
+  font-size: $content-block-title-size;
+}
+
+.textarea-with-counter{
+  position: relative;
+  //display: inline-block;
+}
+
+.textarea-counter{
+  color: $input-placeholder-color;
+  position: absolute;
+  bottom: $report-textarea-padding;
+  right: $report-textarea-padding;
+}

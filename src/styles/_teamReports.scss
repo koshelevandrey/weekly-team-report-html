@@ -1,0 +1,53 @@
+.user-avatar-circle {
+  height: 70px;
+  width: 70px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: $gray-400;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15 px;
+  margin-left: -15 px;
+}
+
+.user-avatar-circle-1 {
+  transform: translate(50%);
+}
+
+.user-avatar-circle-2 {
+  transform: translate(25%);
+}
+
+.user-avatar-circle-3 {
+  transform: translate(0%);
+}
+
+.user-avatar-circle-4 {
+  transform: translate(-25%);
+}
+
+.number-circle {
+  background-color: $yellow;
+  z-index: 100;
+  transform: translate(-50%);
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-4 {
+  z-index: 4;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-1 {
+  z-index: 1;
+}

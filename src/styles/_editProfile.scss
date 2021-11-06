@@ -1,0 +1,37 @@
+.avatar-border{
+  width: $avatar-size;
+  height: $avatar-size;
+  line-height: $avatar-size;
+  border-radius: 50%;
+  border: $avatar-border;
+  font-size: $no-avatar-font-size;
+  color: $no-avatar-color;
+  text-align: center;
+  background: $no-avatar-bg;
+}
+
+.tag-row{
+  gap: $name-tag-row-gap;
+}
+
+.copy-link-textarea {
+  border-color: $copy-link-area-border-color;
+  background-color: $copy-link-area-bg !important;
+  resize: none;
+  width: $small-block-width;
+  height: $copy-link-area-height;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+
+#first-name{
+  width: 280px;
+}
+
+#last-name{
+  width: 340px;
+}
+
+#title{
+  width: 400px;
+}

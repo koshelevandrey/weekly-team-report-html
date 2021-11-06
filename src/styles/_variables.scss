@@ -1,0 +1,89 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/variables";
+
+//Colors
+$gray-800: #333a3d;
+$gray-900: #1f2426;
+$darkblue-500: #0a3d67;
+$main-background-color: #f5f7f8;
+$light-yellow: #ffd658;
+
+// Body
+$body-bg: $main-background-color;
+
+//Navigation
+$nav-link-color: $white;
+$nav-link-hover-color: $yellow;
+$nav-pills-link-active-color: $white;
+$nav-pills-link-active-bg: $gray-900;
+$nav-pills-link-active-font-weight: bold;
+$nav-pills-padding-y: 10px;
+$nav-pills-padding-x: 20px;
+
+//Aside
+$aside-width: 300px;
+$aside-bg: $gray-800;
+$aside-font-size: 1.2rem;
+
+//Feedback-button
+$feedback-button-background-color: $darkblue-500;
+
+//Help-button
+$help-button-background-color: $light-yellow;
+
+//pagination-links
+$pagination-active-color: $white;
+$pagination-active-bg: $dark;
+$pagination-border-width: 2px;
+$pagination-border-color: $dark;
+$pagination-color: $gray-600;
+$pagination-active-border-color: $yellow;
+$pagination-hover-color: $yellow;
+$pagination-hover-border-color: $dark;
+$pagination-focus-color: $yellow;
+$pagination-focus-box-shadow: $yellow;
+
+// Disabled button
+$btn-disabled-color: #8e999e;
+$btn-disabled-bg: #e8eced;
+
+// Send button
+$send-button-height: 40px;
+
+// Text sizes
+$big-title-size: 4rem;
+$content-block-title-size: 2.3rem;
+
+// Smile and smile card
+$smile-size: 100px;
+$smile-card-size: 200px;
+
+// Small block
+$small-block-width: 600px;
+
+// Input
+$input-placeholder-color: #bcbec2;
+$textarea-focus-box-shadow: 0 0 10px $light-yellow;
+
+// Report textarea
+$report-textarea-height: 200px;
+$report-textarea-padding: 30px;
+
+//Images
+$launch-guide-img-width: 200px;
+
+// Avatar
+$avatar-size: 150px;
+$avatar-border: 3px solid white;
+$no-avatar-font-size: 50px;
+$no-avatar-color: #333a3d;
+$no-avatar-bg: #d5d9db;
+
+// Copy link textarea
+$copy-link-area-height: 50px;
+$copy-link-area-border-color: #212529;
+$copy-link-area-bg: transparent;
+
+// Name tag row
+$name-tag-row-gap: 10px;

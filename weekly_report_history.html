@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+        <title>Weekly Report History</title>
+    </head>
+    <body>
+    <button type="button" class="btn btn-primary feedback-button">Feedback</button>
+    <button type="button" class="btn btn-warning help-button"><i class="bi bi-question-circle m-2"></i>Help</button>
+    <div class="d-flex h-100">
+        <aside class="p-3 d-flex flex-column justify-content-between text">
+            <div>
+                <img src="logo.png" alt="logo">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item p-2">
+                        <a class="nav-link" aria-current="page" href="index.html">Launch Guide</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="invite_your_team.html">Invite Your Team</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="team_reports.html">Team Reports</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="my_reports.html">My Reports</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link text-warning" href="fill-out-report.html">Fill out a Report</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item p-2 pb-3">
+                        <a class="nav-link" href="#">Back to Elite</a>
+                    </li>
+                    <li class="nav-item p-2 pt-3 pb-3">
+                        <a class="nav-link" href="my_company.html">My Company</a>
+                    </li>
+                    <li class="nav-item p-2 pt-3 pb-3">
+                        <a class="nav-link" href="edit-profile.html"><i class="bi bi-gear-fill"></i> My Profile</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" href="#"><i class="bi bi-arrow-left-square-fill"></i> Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="flex-grow-1  overflow-auto">
+            <header class=" d-flex flex-column justify-content-between align-items-center text-light bg-dark p-3 text-light">
+                <ul class="pagination pagination-sm my-3">
+                    <li class="page-item"><a href="team_reports.html" class="page-link bg-dark">Immediate Team</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">Extended Team</a></li>
+                </ul>
+                <h1 class="my-3">Weekly report history</h1>
+                <h4 class="mt-4">Get a bigger picture of how your tem has been doing over time.</h4>
+            </header>
+            <div class="d-flex flex-column align-items-center main-background w-100">
+                <div class="d-flex flex-column align-items-center mt-3 mb-5">
+                    <ul class="pagination pagination-sm my-3">
+                        <li class="page-item"><a href="#" class="page-link bg-dark">Previous period:5/16-5/22</a></li>
+                        <li class="page-item"><a href="#" class="page-link bg-dark">Current period:5/23-5/29</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">Older Reports</a></li>
+                    </ul>
+                    <ul class="pagination pagination-sm my-3">
+                        <li class="page-item active"><a href="#" class="page-link">Overall</a></li>
+                        <li class="page-item"><a href="#" class="page-link bg-dark">Morale</a></li>
+                        <li class="page-item"><a href="#" class="page-link bg-dark">Stress</a></li>
+                        <li class="page-item"><a href="#" class="page-link bg-dark">Workload</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column align-items-center w-100">
+                    <p class="text-uppercase fw-bold mb-0 mt-2">Extended team average</p>
+                    <span class="yellow-line mb-4"></span>
+                    <div class="row flex-nowrap w-85">
+                        <div class="col-lg-5 py-3 m-2 "></div>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around align-items-center">
+                            <p class="p-1 mb-0 text-center small col">9w ago</p>
+                            <p class="p-1 mb-0 text-center small col">8w ago</p>
+                            <p class="p-1 mb-0 text-center small col">7w ago</p>
+                            <p class="p-1 mb-0 text-center small col">6w ago</p>
+                            <p class="p-1 mb-0 text-center small col">5w ago</p>
+                            <p class="p-1 mb-0 text-center small col">4w ago</p>
+                            <p class="p-1 mb-0 text-center small col">3w ago</p>
+                            <p class="p-1 mb-0 text-center small col">2w ago</p>
+                            <p class="p-1 mb-0 text-center small col">1w ago</p>
+                            <p class="p-1 mb-0 text-center small col">Current</p>
+                        </div>
+                    </div>
+                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2 shadow">
+                        <p class="py-3 m-2 fw-bold col-lg-5">Overall</p>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around">
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-center w-100">
+                    <p class="text-uppercase fw-bold mb-0 mt-2">Extended team</p>
+                    <span class="yellow-line mb-4"></span>
+                    <div class="row flex-nowrap w-85">
+                        <div class="col-lg-5 py-3 m-2 "></div>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around align-items-center">
+                            <p class="p-1 mb-0 text-center small col">9w ago</p>
+                            <p class="p-1 mb-0 text-center small col">8w ago</p>
+                            <p class="p-1 mb-0 text-center small col">7w ago</p>
+                            <p class="p-1 mb-0 text-center small col">6w ago</p>
+                            <p class="p-1 mb-0 text-center small col">5w ago</p>
+                            <p class="p-1 mb-0 text-center small col">4w ago</p>
+                            <p class="p-1 mb-0 text-center small col">3w ago</p>
+                            <p class="p-1 mb-0 text-center small col">2w ago</p>
+                            <p class="p-1 mb-0 text-center small col">1w ago</p>
+                            <p class="p-1 mb-0 text-center small col">Current</p>
+                        </div>
+                    </div>
+                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2 shadow">
+                        <p class="py-3 m-2 col-lg-5">John Doe</p>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around">
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                        </div>
+                    </div>
+                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2 shadow">
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around">
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                        </div>
+                    </div>
+                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2 shadow">
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around">
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                        </div>
+                    </div>
+                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2 shadow">
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around">
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                        </div>
+                    </div>
+                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2 shadow">
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around">
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                        </div>
+                    </div>
+                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2 shadow">
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around">
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                        </div>
+                    </div>
+                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2 shadow">
+                        <p class="py-3 m-2 col-lg-5">Random name</p>
+                        <div class="col-lg-7 row flex-nowrap justify-content-around">
+                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    </body>
+    
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("service-worker.js")
+                    .then((registration) => {
+                        console.log("Service Worker registered: ", registration);
+                    })
+                    .catch((registrationError) => {
+                        console.error("Service Worker registration failed: ", registrationError);
+                    });
+            });
+        }
+    </script>
+</html>
