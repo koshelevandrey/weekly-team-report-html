@@ -29,7 +29,8 @@ const config = {
   }, {}),
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: '[name][ext]',
   },
   optimization: {
     splitChunks: {
@@ -68,7 +69,6 @@ const config = {
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset/resource",
-        use: 'file-loader?name=./[name].[ext]'
       },
     ],
   },
