@@ -14,7 +14,8 @@
         <div class="modal-dialog modal-dialog-centered modal-size">
             <div class="modal-content top-border-color p-4">
                 <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                            onclick="window.location.href='/edit-profile.html'"></button>
                 </div>
                 <div class="modal-body">
                     <h2 class="fw-bolder">Edit Leader(s).</h2>
@@ -31,7 +32,9 @@
                     <input class="form-control form-control-lg mt-4" type="text" aria-label=".form-control-lg example">
                 </div>
                 <div class="modal-footer modal-bottom-button border-0 mt-3">
-                    <button type="button" class="btn save-button">Save changes</button>
+                    <a href="edit-profile.html">
+                        <button type="button" class="btn save-button">Save changes</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -42,13 +45,13 @@
                 <img src="logo.png" alt="logo">
                 <ul class="nav nav-pills flex-column">
                     <li class="nav-item p-2">
-                        <a class="nav-link" aria-current="page" href="index.html">Launch Guide</a>
+                        <a class="nav-link" href="index.html">Launch Guide</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link" href="invite_your_team.html">Invite Your Team</a>
+                        <a class="nav-link" aria-current="page" href="invite_your_team.html">Invite Your Team</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link active" href="team_reports.html">Team Reports</a>
+                        <a class="nav-link" href="team_reports.html">Team Reports</a>
                     </li>
                     <li class="nav-item p-2">
                         <a class="nav-link" href="my_reports.html">My Reports</a>
@@ -64,10 +67,10 @@
                         <a class="nav-link" href="#">Back to Elite</a>
                     </li>
                     <li class="nav-item p-2 pt-3 pb-3">
-                        <a class="nav-link" href="#">My Company</a>
+                        <a class="nav-link" href="my_company.html">My Company</a>
                     </li>
                     <li class="nav-item p-2 pt-3 pb-3">
-                        <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
+                        <a class="nav-link active" href="#"><i class="bi bi-gear-fill"></i> My Profile</a>
                     </li>
                     <li class="nav-item p-2">
                         <a class="nav-link" href="#"><i class="bi bi-arrow-left-square-fill"></i> Sign Out</a>
@@ -76,177 +79,87 @@
             </div>
         </aside>
         <main class="flex-grow-1 overflow-auto">
-            <header class=" d-flex flex-column justify-content-between align-items-center text-light bg-dark p-3 text-light">
-                <ul class="pagination pagination-sm my-3">
-                    <li class="page-item"><a href="#" class="page-link bg-dark">Immediate Team</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">Extended Team</a></li>
-                </ul>
-                <h1 class="my-3">Weekly report history</h1>
-                <h4 class="mt-4">Get a bigger picture of how your tem has been doing over time.</h4>
+            <header class="d-flex flex-column bg-dark p-5 text-center text-light">
+                <div class="avatar-border mx-auto">
+                    <span class="fw-bold user-select-none">AK</span>
+                </div>
+                <h1 class="big-title fw-bold">Anatoliy Kolodkin</h1>
+                <p>anatoliy@ankosoftware.com</p>
             </header>
-            <div class="d-flex flex-column align-items-center main-background w-100">
-                <div class="d-flex flex-column align-items-center mt-3 mb-5">
-                    <ul class="pagination pagination-sm my-3">
-                        <li class="page-item"><a href="#" class="page-link bg-dark">Previous period:5/16-5/22</a></li>
-                        <li class="page-item"><a href="#" class="page-link bg-dark">Current period:5/23-5/29</a></li>
-                        <li class="page-item active"><a href="#" class="page-link">Older Reports</a></li>
-                    </ul>
-                    <ul class="pagination pagination-sm my-3">
-                        <li class="page-item active"><a href="#" class="page-link">Overall</a></li>
-                        <li class="page-item"><a href="#" class="page-link bg-dark">Morale</a></li>
-                        <li class="page-item"><a href="#" class="page-link bg-dark">Stress</a></li>
-                        <li class="page-item"><a href="#" class="page-link bg-dark">Workload</a></li>
-                    </ul>
+            <div class="p-5 mx-5 d-flex flex-column">
+                <h2 class="content-block-title fw-bold"><b>Edit Anatoliy's information</b></h2>
+                <p class="mb-5">You may assign leaders or team members to this person, as well as deactivate their account if they no longer work for your organization.</p>
+                <div class="mt-3 mb-5">
+                    <div class="fw-bold text-uppercase">Basic profile information</div>
+                    <hr class="mt-1"/>
+                    <div class="form-group mt-2 mb-2">
+                        <label for="first-name" class="fw-bold">First Name</label>
+                        <input type="text" class="form-control" id="first-name" value="Anatoliy"/>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label for="last-name" class="fw-bold">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" value="Kolodkin"/>
+                    </div>
+                    <div class="form-group mt-2 mb-2">
+                        <label for="title" class="fw-bold">Title</label>
+                        <input type="text" class="form-control" id="title" value="CEO"/>
+                    </div>
+                    <button class="btn btn-warning mt-2"
+                            type="submit">
+                        Save
+                    </button>
                 </div>
-                <div class="d-flex flex-column align-items-center w-100">
-                    <p class="text-uppercase fw-bold mb-0 mt-2">Extended team average</p>
-                    <span class="yellow-line mb-4"></span>
-                    <div class="row flex-nowrap w-85">
-                        <div class="col-lg-5 py-3 m-2 "></div>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around align-items-center">
-                            <p class="p-1 mb-0 text-center small col">9w ago</p>
-                            <p class="p-1 mb-0 text-center small col">8w ago</p>
-                            <p class="p-1 mb-0 text-center small col">7w ago</p>
-                            <p class="p-1 mb-0 text-center small col">6w ago</p>
-                            <p class="p-1 mb-0 text-center small col">5w ago</p>
-                            <p class="p-1 mb-0 text-center small col">4w ago</p>
-                            <p class="p-1 mb-0 text-center small col">3w ago</p>
-                            <p class="p-1 mb-0 text-center small col">2w ago</p>
-                            <p class="p-1 mb-0 text-center small col">1w ago</p>
-                            <p class="p-1 mb-0 text-center small col">Current</p>
-                        </div>
+                <div class="mt-3 mb-5">
+                    <div class="fw-bold text-uppercase">Anatoliy reports to the following leaders:</div>
+                    <hr class="mt-1"/>
+                    <div class="d-flex flex-row tag-row flex-wrap">
+                        <div class="btn btn-dark">Nikolai Kapustin</div>
+                        <div class="btn btn-dark">Nina Mammadova</div>
+                        <div class="btn btn-dark">Natalia Starkova</div>
+                        <div class="btn btn-dark">Anton Tarkhanov</div>
+                        <div class="btn btn-dark">Alexandr Vovchuk</div>
                     </div>
-                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 fw-bold col-lg-5">Overall</p>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                        </div>
-                    </div>
+                    <a href="edit_members.html">
+                        <button class="btn btn-outline-dark mt-3"
+                                type="button">
+                            Edit Leader(s)
+                        </button>
+                    </a>
                 </div>
-                <div class="d-flex flex-column align-items-center w-100">
-                    <p class="text-uppercase fw-bold mb-0 mt-2">Extended team</p>
-                    <span class="yellow-line mb-4"></span>
-                    <div class="row flex-nowrap w-85">
-                        <div class="col-lg-5 py-3 m-2 "></div>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around align-items-center">
-                            <p class="p-1 mb-0 text-center small col">9w ago</p>
-                            <p class="p-1 mb-0 text-center small col">8w ago</p>
-                            <p class="p-1 mb-0 text-center small col">7w ago</p>
-                            <p class="p-1 mb-0 text-center small col">6w ago</p>
-                            <p class="p-1 mb-0 text-center small col">5w ago</p>
-                            <p class="p-1 mb-0 text-center small col">4w ago</p>
-                            <p class="p-1 mb-0 text-center small col">3w ago</p>
-                            <p class="p-1 mb-0 text-center small col">2w ago</p>
-                            <p class="p-1 mb-0 text-center small col">1w ago</p>
-                            <p class="p-1 mb-0 text-center small col">Current</p>
-                        </div>
+                <div class="mt-3 mb-5">
+                    <div class="fw-bold text-uppercase">The following team members report to Anatoliy:</div>
+                    <hr class="mt-1"/>
+                    <div class="d-flex flex-row tag-row flex-wrap">
+                        <div class="btn btn-dark">Aleksandr Evseev</div>
+                        <div class="btn btn-dark">Nikolai Kapustin</div>
+                        <div class="btn btn-dark">Anna Kotova</div>
+                        <div class="btn btn-dark">Nina Mammadova</div>
+                        <div class="btn btn-dark">Natalia Starkova</div>
+                        <div class="btn btn-dark">Anton Tarkhanov</div>
+                        <div class="btn btn-dark">Alexandr Vovchuk</div>
                     </div>
-                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 col-lg-5">John Doe</p>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                        </div>
-                    </div>
-                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 col-lg-5">Random name</p>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                        </div>
-                    </div>
-                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 col-lg-5">Random name</p>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                        </div>
-                    </div>
-                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 col-lg-5">Random name</p>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                        </div>
-                    </div>
-                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 col-lg-5">Random name</p>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                        </div>
-                    </div>
-                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 col-lg-5">Random name</p>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                        </div>
-                    </div>
-                    <div class="row flex-nowrap bg-white w-85 align-items-center mb-2">
-                        <p class="py-3 m-2 col-lg-5">Random name</p>
-                        <div class="col-lg-7 row flex-nowrap justify-content-around">
-                            <img src="happy.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="sad.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="neutral.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                            <img src="unmarked.svg" alt="smile" class="smile col m-auto"/>
-                        </div>
-                    </div>
+                    <a href="edit_members.html">
+                        <button class="btn btn-outline-dark mt-3"
+                                type="button">
+                            Edit Member(s)
+                        </button>
+                    </a>
+                </div>
+                <div class="d-flex flex-column mt-3 mb-5 justify-content-center">
+                    <div class="fw-bold text-uppercase">Anatoliy's invite link</div>
+                    <hr class="mt-1"/>
+                    <p>Share the following link to invite team members on Anatoliy's behalf.</p>
+                    <label class="d-none" for="link-for-invite">
+                        Link to invite team members
+                    </label>
+                    <textarea id="link-for-invite"
+                              class="form-control copy-link-textarea mx-auto"
+                              type="text"
+                              readonly>https://github.com/codemakeracademy/weekly-team-report-html/pull/75/commits/7826b47b6fabe366fbb895b60c49c7e4a670b296</textarea>
+                    <button class="btn btn-warning m-3 mx-auto"
+                            type="button">
+                        Copy Link
+                    </button>
                 </div>
             </div>
         </main>
